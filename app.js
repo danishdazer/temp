@@ -35,6 +35,7 @@ app.post('/items', async (req, res) => {
   try {
 
     const { name, description } = req.body;
+    console.log(name);
     const validateInput = Item.validateInput(name, description);
 
    
